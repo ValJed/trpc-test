@@ -21,6 +21,7 @@ importers:
       '@types/node': ^18.15.3
       ts-node: ^10.9.1
       ts-node-dev: ^2.0.0
+      tsconfig: workspace:*
       typescript: ^4.9.3
       zod: ^3.21.4
     dependencies:
@@ -33,11 +34,13 @@ importers:
       '@types/express': 4.17.15
       ts-node: 10.9.1_t6jtj4eaock2p46wpmb7ikfp6u
       ts-node-dev: 2.0.0_t6jtj4eaock2p46wpmb7ikfp6u
+      tsconfig: link:../../packages/tsconfig
       typescript: 4.9.4
 
   apps/ui:
     specifiers:
       '@vitejs/plugin-vue': ^4.0.0
+      tsconfig: workspace:*
       typescript: ^4.9.3
       vite: ^4.0.0
       vue: ^3.2.45
@@ -46,6 +49,7 @@ importers:
       vue: 3.2.45
     devDependencies:
       '@vitejs/plugin-vue': 4.0.0_vite@4.0.4+vue@3.2.45
+      tsconfig: link:../../packages/tsconfig
       typescript: 4.9.4
       vite: 4.0.4
       vue-tsc: 1.0.19_typescript@4.9.4
@@ -70,6 +74,9 @@ importers:
       eslint-plugin-vue: 9.9.0_eslint@8.36.0
     devDependencies:
       typescript: 4.9.4
+
+  packages/tsconfig:
+    specifiers: {}
 
 packages:
 
